@@ -27,7 +27,7 @@ export default class NavMenu extends Component<NavProps, any> {
   render() {
 
     return (
-      <Menu style={{ backgroundColor:"#FFFFFF", height:"100vh"}} autoWidth={false} onChange={(evt, value) => this.props.onChange(value)}>
+      <Menu style={{ backgroundColor:"#333333", height:"100vh"}} autoWidth={false} onChange={(evt, value) => this.props.onChange(value)}>
         <MenuItem leftIcon={<Apps />} style={{width:60}} value="components" />
         <MenuItem leftIcon={<SubdirectoryArrowRight />} style={{width:60}} value="treeView" />
       </Menu>

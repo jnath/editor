@@ -12,7 +12,11 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import App from './App';
 
-const muiTheme = getMuiTheme();
+const muiTheme = getMuiTheme({
+  listItem:{
+    secondaryTextColor: "#b2b2b2",
+  }
+});
 
 export default class Main extends Component<any, any> {
 
