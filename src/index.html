@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+        *,
+        body,
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #1e1e1e;
+        }
+        /* different cases */
+
+        *:hover::-webkit-scrollbar {
+            display: initial;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        *::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, .1);
+        }
+    </style>
+    <!-- bundle.js will be injected here -->
+
+</head>
+
+<body>
+    <div id="app"></div>
+    <!--<script>
+        require('./lib/boot.js');
+        require('devtron').install();
+    </script>-->
+</body>
+
+</html>

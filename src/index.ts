@@ -1,5 +1,5 @@
 import * as electron from 'electron';
-import {app, BrowserWindow} from 'electron';
+import { app, BrowserWindow } from 'electron';
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.

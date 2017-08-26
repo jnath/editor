@@ -2,7 +2,7 @@
  * In this file, we create a React component
  */
 import * as React from 'react';
-import {Component} from 'react';
+import { Component } from 'react';
 
 import NavMenu from './component/NavMenu';
 import Components from './component/Components';
@@ -24,15 +24,15 @@ export default class App extends Component<any, any> {
     switch (this.state.tab) {
       case "treeView":
         TabView = TreeView;
-      break;
+        break;
       default:
       case "components":
         TabView = Components;
-      break;
+        break;
     }
     return (
-      <div style={{display:"flex"}}>
-        <NavMenu onChange={( value:string ) => this.setState({ tab: value })}/>
+      <div style={{ display: "flex" }}>
+        <NavMenu onChange={(value: string) => this.setState({ tab: value })} />
         <TabView />
       </div>
     );
